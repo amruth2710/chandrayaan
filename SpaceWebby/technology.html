@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>CHANDRAYAN | OVERVIEW</title>
+</head>
+<body class="destination">
+
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <!-- my ::before sudo element is here -->
+    <div class="logo">
+      <img src="./assets/shared/logo.svg" alt="Tourisim logo" class="logo" />
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">00</span>Home</a></li>
+        <li ><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">01</span>Destination</a></li>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew.html"><span aria-hidden="true">02</span>Crew</a></li>
+        <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="technology.html"><span aria-hidden="true">03</span>Technology</a></li>
+      </ul>
+    </nav>
+    <!-- my ::after sudo element is here -->
+  </header>
+
+  <main id="main" class="grid-container grid-container--destination flow">
+
+    <!-- <div> -->
+      <h1 class="numbered-title uppercase text-accent ff-sans-cond fs-500 letter-spacing-1">
+        <span aria-hidden="true">03</span> THE TERMINOLOGY
+      </h1>
+      <br/>
+      <br/>        
+      <picture id="moon-image">
+        <source srcset="./assets/technology/spac-rocket.png" type="image/png" />
+        <!-- <source srcset="/assets/destination/image-moon.webp" type="image/webp" /> -->
+        <img src="./assets/technology/spac-rocket.png" alt="the moon" />
+      </picture>
+
+      <picture hidden id="mars-image">
+        <source srcset="./assets/technology/c2spac-rocket1.png" type="image/png" />
+        <!-- <source srcset="/assets/destination/image-mars.webp" type="image/webp" /> -->
+        <img src="./assets/technology/c2spac-rocket1.png" alt="the planet mars" />
+      </picture>
+
+      <picture hidden id="europa-image">
+        <source srcset="./assets/technology/spac-rocket3.png" type="image/png" />
+        <!-- <source srcset="/assets/destination/image-europa.webp" type="image/webp" /> -->
+        <img src="./assets/technology/spac-rocket3.png" alt="the planet europa" />
+      </picture>
+
+      <picture hidden id="titan-image">
+        <source srcset="./assets/technology/spac-rocket4.png" type="image/png" />
+        <!-- <source srcset="/assets/destination/image-titan.webp" type="image/webp" /> -->
+        <img src="./assets/technology/spac-rocket4.png" alt="the moon titan" />
+      </picture>
+      
+      <!-- Tab list -->
+      <div class="tab-list underline-indicators flex" role="tablist" aria-label="destination list">
+        <button aria-selected="true" role="tab" data-image="moon-image" aria-controls="moon-tab" class="uppercase text-accent letter-spacing-2 ff-sans-cond" tabindex="0">01</button>
+        <button aria-selected="false" role="tab" data-image="mars-image"  aria-controls="mars-tab" class="uppercase text-accent letter-spacing-2 ff-sans-cond" tabindex="-1">02</button>
+        <button aria-selected="false" role="tab" data-image="europa-image"  aria-controls="europa-tab" class="uppercase text-accent letter-spacing-2 ff-sans-cond" tabindex="-1">03</button>
+        <button aria-selected="false" role="tab" data-image="titan-image"  aria-controls="titan-tab" class="uppercase text-accent letter-spacing-2 ff-sans-cond" tabindex="-1">04</button>
+      </div>
+
+    <!-- The moon -->
+    <article class="destination-info flow" id="moon-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif text-white d-block">LAUNCHER [GSLV Mk-III]</h2>
+
+      <p class="text-accent fs-400">
+        The GSLV Mk-III will carry Chandrayaan 2 to its designated orbit. This three-stage vehicle is India's most powerful launcher to date, 
+        and is capable of launching 4-ton class of satellites to the Geosynchronous Transfer Orbit (GTO).
+      </p>
+      
+      <div class="flex destination-meta">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Avg. distance</h3>
+          <p class="ff-serif uppercase">384,400 km</p>
+        </div>
+  
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Est. travel time</h3>
+          <p class="ff-serif uppercase">3 days</p>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- Mars -->
+    <article hidden class="destination-info flow" id="mars-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif text-white d-block">Orbiter</h2>
+
+      <p class="text-accent fs-400">
+        Chandrayaan 2 Orbiter is capable of communicating with Indian Deep Space Network (IDSN) at Byalalu as well as the Vikram Lander. The precise launch and mission management has ensured a mission life of almost seven years instead of the planned one year.
+      </p>
+      
+      <div class="flex destination-meta">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Weight</h3>
+          <p class="ff-serif uppercase">2,379 kg</p>
+        </div>
+  
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Electric Power Generation</h3>
+          <p class="ff-serif uppercase">1,000 W</p>
+        </div>
+      </div>
+
+    </article>
+
+
+    <!-- Europa -->
+    <article hidden class="destination-info flow" id="europa-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif text-white d-block">Lander: [Vikram]</h2>
+
+      <p class="text-accent fs-400">
+        The Lander of Chandrayaan-2 was named Vikram after Dr Vikram A Sarabhai, the Father of the Indian Space Programme. 
+        It was designed to function for one lunar day, which is equivalent to about 14 Earth days.
+      </p>
+      <div class="flex destination-meta">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Weight</h3>
+          <p class="ff-serif uppercase">1,471 kg</p>
+        </div>
+  
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Electric Power Generation</h3>
+          <p class="ff-serif uppercase">650 W</p>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- Titan -->
+    <article hidden class="destination-info flow" id="titan-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif text-white d-block">Rover: [Pragyan]</h2>
+
+      <p class="text-accent fs-400">
+        Chandrayaan-2’s Rover was a 6-wheeled robotic vehicle named as Pragyan, which translates to 'wisdom' in Sanskrit.
+      </p>
+      <div class="flex destination-meta">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Weight</h3>
+          <p class="ff-serif uppercase">27 kg</p>
+        </div>
+  
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Electric Power Generation</h3>
+          <p class="ff-serif uppercase">50 W</p>
+        </div>
+      </div>
+    </article>
+  
+  </main>
+  <footer>for more details visit <a href="https://www.isro.gov.in/chandrayaan2-home-0">isro.gov</a></footer>
+  <script defer src="./navigation.js"></script>
+  <script defer src="./tabs.js"></script>
+</body>
+</html>

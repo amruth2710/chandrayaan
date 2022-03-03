@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>CHANDRAYAN | OVERVIEW</title>
+</head>
+<body class="destination">
+
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <!-- my ::before sudo element is here -->
+    <div class="logo">
+      <img src="./assets/shared/logo.svg" alt="Tourisim logo" class="logo" />
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">00</span>Home</a></li>
+        <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">01</span>Destination</a></li>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew.html"><span aria-hidden="true">02</span>Crew</a></li>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="technology.html"><span aria-hidden="true">03</span>Technology</a></li>
+      </ul>
+    </nav>
+    <!-- my ::after sudo element is here -->
+  </header>
+
+  <main id="main" class="grid-container grid-container--destination flow">
+
+    <!-- <div> -->
+      <h1 class="numbered-title uppercase text-accent ff-sans-cond fs-500 letter-spacing-1">
+        <span aria-hidden="true">01</span> MISSION CHANDRAYAAN
+      </h1>
+      <br/>
+      <br/>        
+      <picture id="moon-image">
+        <source srcset="./assets/destination/image-moon.webp" type="image/webp" />
+        <!-- <source srcset="/assets/destination/image-moon.webp" type="image/webp" /> -->
+        <img src="./assets/destination/image-moon.png" alt="the moon" />
+      </picture>
+
+      <picture hidden id="mars-image">
+        <source srcset="./assets/destination/image-mars.webp" type="image/webp" />
+        <!-- <source srcset="/assets/destination/image-mars.webp" type="image/webp" /> -->
+        <img src="./assets/destination/image-mars.png" alt="the planet mars" />
+      </picture>
+
+      <picture hidden id="europa-image">
+        <source srcset="./assets/destination/image-europa.webp" type="image/webp" />
+        <!-- <source srcset="/assets/destination/image-europa.webp" type="image/webp" /> -->
+        <img src="./assets/destination/image-europa.png" alt="the planet europa" />
+      </picture>
+
+      <picture hidden id="titan-image">
+        <source srcset="./assets/destination/image-titan.webp" type="image/webp" />
+        <!-- <source srcset="/assets/destination/image-titan.webp" type="image/webp" /> -->
+        <img src="./assets/destination/image-titan.png" alt="the moon titan" />
+      </picture>
+      
+      <!-- Tab list -->
+      <div class="tab-list underline-indicators flex" role="tablist" aria-label="destination list">
+        <button aria-selected="true" role="tab" data-image="moon-image" aria-controls="moon-tab" class="uppercase text-accent letter-spacing-2 ff-sans-cond" tabindex="0">01</button>
+        <button aria-selected="false" role="tab" data-image="mars-image"  aria-controls="mars-tab" class="uppercase text-accent letter-spacing-2 ff-sans-cond" tabindex="-1">02</button>
+        <button aria-selected="false" role="tab" data-image="europa-image"  aria-controls="europa-tab" class="uppercase text-accent letter-spacing-2 ff-sans-cond" tabindex="-1">03</button>
+        <button aria-selected="false" role="tab" data-image="titan-image"  aria-controls="titan-tab" class="uppercase text-accent letter-spacing-2 ff-sans-cond" tabindex="-1">04</button>
+      </div>
+
+    <!-- The moon -->
+    <article class="destination-info flow" id="moon-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif text-white d-block">Moon</h2>
+
+      <p class="text-accent fs-400">
+        The Moon is the closest cosmic body at which space discovery can be attempted and documented. 
+        It is also a promising test bed to demonstrate technologies required for deep-space missions. 
+        Chandrayaan-2 aims for enhancing our understanding of the Moon, stimulate the advancement of technology, 
+        promote global alliances and inspire a future generation of explorers and scientists.
+      </p>
+      
+      <div class="flex destination-meta">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Avg. distance</h3>
+          <p class="ff-serif uppercase">384,400 km</p>
+        </div>
+  
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Est. travel time</h3>
+          <p class="ff-serif uppercase">3 days</p>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- Mars -->
+    <article hidden class="destination-info flow" id="mars-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif text-white d-block">THE MISSION</h2>
+
+      <p class="text-accent fs-400">
+        Chandrayaan-2 mission is a highly complex mission, 
+        which represents a significant technological leap compared to the previous missions of ISRO, 
+        which brought together an Orbiter, Lander and Rover with the goal of exploring south pole of the Moon. 
+        This is a unique mission which aims at studying not just one area of the Moon but all the areas combining the exosphere, 
+        the surface as well as the sub-surface of the moon in a single mission.
+      </p>
+      
+      <!-- <div class="flex destination-meta">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Avg. distance</h3>
+          <p class="ff-serif uppercase">225 mil. km</p>
+        </div>
+  
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Est. travel time</h3>
+          <p class="ff-serif uppercase">9 months</p>
+        </div>
+      </div> -->
+
+    </article>
+
+
+    <!-- Europa -->
+    <article hidden class="destination-info flow" id="europa-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif text-white d-block">OBJECTIVES</h2>
+
+      <p class="text-accent fs-400">
+        Moon provides the best linkage to Earth’s early history. 
+        It offers an undisturbed historical record of the inner Solar system environment. 
+        Extensive mapping of lunar surface to study variations in lunar surface were essential to trace back the origin and evolution of the Moon. 
+        <br/>
+        Evidence for water molecules discovered by Chandrayaan-1, required further studies on the extent of water molecule distribution on the surface, below the surface and in the tenous lunar exosphere to address the origin of water on Moon.
+        The Lunar South pole is especially interesting because of the lunar surface area that remains in shadow is much larger than that at the North Pole. There could be a possibility of presence of water in permanently shadowed areas around it. In addition, 
+        South Pole region has craters that are cold traps and contain a fossil record of the early Solar System.
+      </p>
+
+    </article>
+
+
+    <!-- Titan -->
+    <article hidden class="destination-info flow" id="titan-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif text-white d-block">EXPERIMENTS</h2>
+
+      <p class="text-accent fs-400">
+        Chandrayaan-2 has several science payloads to expand the lunar scientific knowledge through detailed study of 
+        topography, seismography, mineral identification and distribution, surface chemical composition, 
+        thermo-physical characteristics of top soil and composition of the tenuous lunar atmosphere, leading to 
+        a new understanding of the origin and evolution of the Moon.
+        The Orbiter payloads will conduct remote-sensing observations 
+        from a 100 km orbit while the Lander and Rover payloads will perform in-situ measurements near the landing site.
+      </p>
+    </article>
+  
+  </main>
+  <footer>for more details visit <a href="https://www.isro.gov.in/chandrayaan2-home-0">isro.gov</a></footer>
+  <script defer src="./navigation.js"></script>
+  <script defer src="./tabs.js"></script>
+</body>
+</html>

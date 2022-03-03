@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>CHANDRAYAN | OVERVIEW</title>
+</head>
+<body class="crew">
+
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <!-- my ::before sudo element is here -->
+    <div class="logo">
+      <img src="./assets/shared/logo.svg" alt="Tourisim logo" class="logo" />
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">00</span>Home</a></li>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">01</span>Destination</a></li>
+        <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew.html"><span aria-hidden="true">02</span>Crew</a></li>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="technology.html"><span aria-hidden="true">03</span>Technology</a></li>
+      </ul>
+    </nav>
+    <!-- my ::after sudo element is here -->
+  </header>
+
+  <main id="main" class="grid-container grid-container--crew flow">
+
+    <h1 class="numbered-title uppercase text-accent ff-sans-cond fs-500 letter-spacing-1">
+      <span aria-hidden="true">02</span> Meet your crew
+    </h1>
+
+
+    <!-- Dots -->
+    <div class="dot-indicators flex" role="tablist" aria-label="crew member list">
+      <button aria-selected="true" role="tab" tabindex="0" data-image="commander-image" aria-controls="commander-tab"><span class="sr-only">The commander</span></button>
+      <button aria-selected="false" role="tab" tabindex="-1" data-image="specialist-image" aria-controls="specialist-tab"><span class="sr-only">The mission specialist</span></button>
+      <button aria-selected="false" role="tab" tabindex="-1" data-image="pilot-image" aria-controls="pilot-tab"><span class="sr-only">The pilot</span></button>
+      <button aria-selected="false" role="tab" tabindex="-1" data-image="engineer-image" aria-controls="engineer-tab"><span class="sr-only">The crew engineer</span></button>
+    </div>
+
+    <!-- Commander -->
+    <article class="crew-info flow" id="commander-tab" tabindex="0" role="tabpanel">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase text-accent">CHAIRMAN</h2>
+        <p class="fs-700 uppercase ff-serif">Kailasavadivoo Sivan</p>
+      </header>
+
+      <p class="text-accent fs-400">
+        As ISRO chairman, Kailasavadivoo Sivan (62), has been the face of the Chandrayaan-2 mission.
+Sivan, who was appointed ISRO chairman in 2018, is often attributed for the frugality of the space agency's missions as he was raised on a farm in Kanyakumari.
+      </p>
+    </article>
+
+    <picture id="commander-image">
+      <source srcset="./assets/crew/ksivan-removebg-preview.png" type="image/png" />
+      <img src="./assets/crew/ksivan-removebg-preview.png" alt="K sivan" />
+    </picture>
+
+
+    <!-- Specialist -->
+    <article hidden class="crew-info flow" id="specialist-tab" tabindex="0" role="tabpanel">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase text-accent">Project Director</h2>
+        <p class="fs-700 uppercase ff-serif">Muthayya Vanitha</p>
+      </header>
+
+      <p class="text-accent fs-400">
+        Muthayya Vanitha who is the Chandrayaan-2's Project Director, making the mission the first female-led inter-planetary project.
+However, initially, Vanitha was reluctant to step into the role, and had to be persuaded by Chandrayaan-1 Project Director M Annadurai who believed her to be an expert in data-handling.
+Vanitha, who's from the UR Rao Satellite Center, has previously worked with Cartosat-1, Oceansat-2 and Megha-Tropiques teams.
+      </p>
+    </article>
+
+    <picture hidden id="specialist-image">
+      <source srcset="./assets/crew/muthu-removebg-preview.png" type="image/png" />
+      <img src="./assets/crew/muthu-removebg-preview.png" alt="M Vanitha" />
+    </picture>
+
+
+    <!-- Pilot -->
+    <article hidden class="crew-info flow" id="pilot-tab" tabindex="0" role="tabpanel">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase text-accent">Mission Director</h2>
+        <p class="fs-700 uppercase ff-serif">Ritu Karidhal</p>
+      </header>
+
+      <p class="text-accent fs-400">
+        Ritu Karidhal, who's the Mission Director for Chandrayaan-2.
+        Karidhal has worked at ISRO for the past 22 years and is a graduate of Lucknow University and the Indian Institute of Science, Bengaluru.
+        Karidhal is also from the URSC and took up key duties in the Mars Orbiter Mission of 2013 as its Deputy Director (Operations).
+      </p>
+    </article>
+
+    <picture hidden id="pilot-image">
+      <source srcset="./assets/crew/rituq-removebg-preview.png" type="image/png" />
+      <img src="./assets/crew/rituq-removebg-preview.png" alt="ritu" />
+    </picture>
+
+
+
+    <!-- Engineer -->
+    <article hidden class="crew-info flow" id="engineer-tab" tabindex="0" role="tabpanel">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase text-accent">VSSC Director</h2>
+        <p class="fs-700 uppercase ff-serif">Dr S Somanath</p>
+      </header>
+
+      <p class="text-accent fs-400">
+        Dr. S Somanath is the Director of the Vikram Sarabhai Space Center (VSSC), which provided the GSLV MkIII launcher for Chandrayaan-2.
+A mechanical engineer by training, Somanath was instrumental in resolving the glitch in the cryogenic engine in GSLV Mk-III, which led to a week's delay in Chandrayaan-2's lift-off.
+He has been involved with the GSLV Mk-III project from its beginning.
+      </p>
+    </article>
+
+    <picture hidden id="engineer-image">
+      <source srcset="./assets/crew/Dr.-Somnath-Panicker-removebg-preview.png"" type="image/png" />
+      <img src="./assets/crew/Dr.-Somnath-Panicker-removebg-preview.png" alt="Anousheh Ansari" />
+    </picture>
+
+  </main>
+  <footer>for more details visit <a href="https://www.isro.gov.in/chandrayaan2-home-0">isro.gov</a></footer>
+
+  <script defer src="./navigation.js"></script>
+  <script defer src="./tabs.js"></script>
+</body>
+</html>
